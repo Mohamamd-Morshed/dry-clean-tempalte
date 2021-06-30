@@ -1,0 +1,378 @@
+
+
+
+
+bod{
+    scroll-behavior: smooth;
+}
+
+ 
+.navbar-brand{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.container .logo{
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #2196f3;
+}
+
+.slider{
+    width: 100%;
+    height: calc( 100vh - 66px);
+    background-color: #ddd;
+}
+
+.slider .carousel-item{
+    background-size: cover;
+    height: calc( 100vh - 66px);
+}
+.w-100 {
+    width: 100%!important;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.slider .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000000ad;
+    z-index: 1;
+}
+
+.slider .carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 60%;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+
+.slider .carousel-caption h5{
+    color: #2196f3;
+    font-weight: bold;
+    text-align: right;
+    font-size: 26px;
+    line-height: 2;
+}
+.slider .carousel-caption p{
+    text-align: right;
+
+}
+.about{
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: #ecf7ff;
+}
+.about .container h1{
+    text-align: center;
+    color: #2196f3 ;
+    margin: 20px 0px 30px;
+
+}
+.about .container .con{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0px auto;
+    align-items: center;
+
+}
+.about .container h3{
+    text-align: right;
+    font-size: 17px;
+    line-height: 2.5;
+}
+.about .container p{
+    text-align: center;
+    margin: 0px auto;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+.services .title{
+    color: #2196f3;
+    margin: 20px 0;
+}
+.services h4{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 19px;
+    color: grey;
+}
+.services .row{
+    margin-bottom: 20px;
+}
+.services .servbox{
+    width: 250px;
+    height: 270px;
+    display: flex;
+    position: relative;
+    margin:10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+        
+}
+
+.services .servbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.services .servbox .content{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: -140px;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(8px);
+    border-top: 1px solid white;
+    transition: .4s;
+
+
+
+}
+.services .servbox .content h3{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.services .servbox .content span{
+    text-align: right;
+    color: #fff;
+   
+}
+
+.services .servbox:hover .content{
+    bottom: 0;
+
+}
+
+.offers{
+    margin: 100px 0;
+}
+
+.offers .title{
+    color: #2196f3 ;
+    margin-bottom: 50px;
+}
+
+.offers .box{
+    width: 250px;
+    height: 496px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 4px 4px 2px rgb(0 0 0 / 20%);
+    border: 1px solid #89e1ea;
+    padding: 0;
+}
+.offers .box .boxhead{
+    text-align: center;
+}
+.offers .box .boxhead h2{
+    color: #75bbf3;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+}
+.offers .box .boxhead span{
+    font-size: 30px;
+    background: #00bcd4;
+    display: block;
+    color: #fff;
+}
+
+.offers .box .boxbody{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.offers .box .boxbody span{
+    font-weight: 500;
+    margin-bottom: 10px;
+    position: relative;
+}
+.offers .box .boxbody span:before{
+    content: '';
+    position: absolute;
+    border-top: 1px solid #00bcd4;
+    width: 150px;
+    bottom: -4px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+.offers .box .boxbody ul{
+    list-style: none;
+    line-height: 2;
+    padding: 10px;
+    text-align: center;
+}
+.offers .box .boxbody li{
+    padding: 10px;
+    color: grey;
+}
+.offers .box .boxfooter{
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+}
+.offers .box .boxfooter a{
+    margin: 0px auto;
+    display: inline-block;
+    padding: 8px 50px;
+    background: #03a9f4;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+
+.contact{
+    background: #2196f312;
+    padding-bottom: 54px;
+    padding-top: 20px;
+}
+.contact .row{
+    display: flex;
+    justify-content:space-around;
+}
+.contact .row .title{
+    color:#00bcd4;
+    margin: 0px 0px 50px;
+}
+.contact .box{
+    width: 260px;
+    height: 340px;
+    position: relative;
+    padding: 0;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 2px rgb(0 0 0 / 20%);
+    overflow: hidden;
+
+    
+}
+
+.contact .box .imgbox{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+.contact .box .imgbox img{
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.contact .box .boxcontent{
+    width: 100%;
+    left: 0;
+    bottom: -150px;
+    position: absolute;
+    display: flex;
+    border-top: 1px solid #FFF;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(7px);
+    transition: .3s;
+    overflow: hidden;
+}
+
+.contact .box .boxcontent h2{
+    color: #FFF;
+    font-size: 23px;
+    padding: 10px 0;
+    transform: translateY(-80px);
+    transition: .3s;
+    
+}
+.contact .box .boxcontent ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-bottom: 50px;
+}
+.contact .box .boxcontent li{
+    margin: 0 10px;
+    font-size: 22px;
+    transform: translateY(80px);
+    transition:.3s;
+    
+}
+.contact .box .boxcontent li a{
+    color: #FFF;
+    padding: 6px;
+    transition: .4s;
+}
+.contact .box .boxcontent li:hover a{
+    color: #00bcd4;
+    padding: 6px;
+}
+
+.contact .box:hover .boxcontent{
+   
+    bottom: 0px;
+    
+}
+.contact .box:hover .boxcontent li {
+    transform: translateY(0);
+    transition:.3s;
+    transition-delay:calc(var(--i) * .15s);
+}
+.contact .box:hover .boxcontent h2 {
+    transform: translateY(0);
+    transition-delay: .3s;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000080;
+}
+footer h5{
+    font-size: 15px;
+    color: #FFF;
+}
